@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family:'popins',sans-serif;
+}
+/*Navigation Bar*/
+
+img.logoimg{
+    padding-top: 7px;
+    padding-left: 10px;
+    width: 50px;
+    height: 50px;
+    align-items: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+nav{
+    background: #222222;
+    padding: 10px 40px 10px 70px;
+    border:1px solid #000;
+    border-left: none;
+    border-right: none;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo{
+    flex:1;
+    font-size: 20px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+nav ul div.topnav{
+    padding: 0 25px;
+    display: inline-flex;
+}
+
+nav ul div.topnav a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+nav ul div.topnav a:hover {
+    color: #e4b344;
+}
+
+nav ul li.searchbar{
+    height: 40px;
+    width: 240px;
+    display: flex;
+    background: #f2f2f2;
+    border-radius: 5px;
+}
+
+nav ul li.searchbar input{
+    height: 100%;
+    width: 180px;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    color: #000;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+}
+
+nav ul li.searchbar .search-icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    background: #e4b344;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+nav ul li.searchbar .search-icon:hover{
+    background: silver;
+}
+
+nav ul li button.login-button{
+    background-color: #e4b344;
+    border: none;
+    color: white;
+    padding: 11px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 0;
+}
+
+nav ul li button.login-button:hover{
+    background-color: silver;
+
+}
+
+
+/*Slideshow Animation*/
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	float: left;
+	width: 10%;
+    cursor: pointer;
+}
+
+
+
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+
+/*Announcement*/
+.event-container{
+    margin-top: 30px;
+
+}
+
+
+h3.announcement{
+    color: white;
+    text-align: center;
+    border: 1px solid #e4b344;
+    padding: 10px 0;
+    background-color: #222;
+    width: 75%;
+}
+
+.event-container .event{
+    box-shadow:0 4px 16px -8px rgba(0, 0, 0, 0.4); ;
+    display: flex;
+    border-radius: 5px;
+    margin: 32px 0;
+    width: 75%;
+    margin-left: 3px;
+    cursor: pointer;
+}
+
+.event .event-left{
+    background: #e4b344;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 8px 48px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.event .event-left .date {
+    font-size: 40px;
+  }
+  
+.event .event-left .month {
+    font-size: 16px;
+}
+
+.event .event-right h4.event-title {
+    font-size: 15px;
+    margin: 4px 2px;
+    color: #222;
+    text-transform: uppercase;
+}
+
+.event-right .event-description{
+    color:#222;
+}
+  
+
+/*Footer*/
+
+footer{
+	margin-top: 60px;
+	color: #ff2020;
+	background: #222;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    
+}
+
+.follow{
+    text-align: center;
+    padding-top: 10px;
+}
+.endsocial{
+	text-align: center;
+	padding-top: 10px;
+}
+.endsocial a{
+	color: white;
+	font-size: 24px;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	text-align: center;
+
+}
+
+.endsocial a:hover{
+	color: #e4b344;
+	transition: 1s ease;
+
+}
+
+.endlist ul{
+	margin-top: 10px;
+	padding: 0;
+	list-style: none;
+	line-height: 1.6px;
+	text-align: center;
+}
+.endlist ul li{
+	display: inline-block;
+	padding: 0 50px;
+}
+.endlist ul li a{
+	text-decoration: none;
+	color: white;
+}
+.endlist ul li a:hover{
+	color: #e4b344;
+	transition: 1s ease;
+}
+.copyright{
+	margin-top: 15px;
+	text-align: center;
+	color: #fff;
+	opacity: 0.8;
+	padding-bottom: 10px;
+	font-weight: lighter;
+	font-size:80%;
+}
+
+
